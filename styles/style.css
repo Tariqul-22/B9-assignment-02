@@ -14,16 +14,24 @@ body {
     width: 80%;
     margin: 0 auto;
     border-radius: 20px;
+    margin: 3.2rem auto;
 }
 
+.text {
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+}
 
 
 
 /* nav-bar */
 
-header{
+header {
     margin-top: 35px;
 }
+
 .page-title {
     display: flex;
     align-items: center;
@@ -64,6 +72,74 @@ nav span {
 }
 
 
+/* banner section */
+
+.banner {
+    background-image: url('/Images/Group\ 13\ \(1\)\ \(1\).png');
+    height: 31.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .banner .div1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+
+.banner .banner-tittle {
+    color: #FFF;
+    font-size: 4rem;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.banner-discription {
+    color: #FFF;
+    padding: 0.3rem 15.7rem;
+    text-align: center;
+    margin: 1.5rem auto;
+}
+
+.banner .div2 {
+    display: flex;
+    padding: 1rem;
+    gap: 1.6rem;
+    border-radius: 0.5rem;
+    background-color: hsla(193, 36%, 90%, 0.564);
+    margin: 1.5rem auto;
+}
+
+.banner .div2 .info {
+    width: 10.2rem;
+    height: 3.25rem;
+    border-radius: 8px;
+    background-color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+.banner .div2 .find{
+    background: #FF5400;
+    color: #FFF;
+    width: 10.2rem;
+    height: 3.25rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0 1rem;
+}
+.banner .div2 .find img{
+    width: 1.5rem;
+}
 
 
 
@@ -82,10 +158,54 @@ nav span {
 
 
 @media screen and (max-width: 600px) {
-    .navbar>ul{
+
+    /* common */
+    .text {
+        font-size: 0.9rem;
+    }
+
+    .navbar>ul {
         display: none;
     }
+
     .navbar>img {
         display: block;
     }
+
+    /* banner */
+    .banner{
+        
+    }
+    .banner .div2{
+        flex-direction: column;
+    }
+    .banner .banner-tittle{
+        font-size: 1.5rem;
+    }
+
+    .banner-discription{
+        padding: 0.3rem 1rem;
+        margin: 0;
+    }
+
+    .banner .div2 {
+        width: 20rem;
+        align-items: center;
+        gap: 1rem;
+    }
+    .banner .div2 .info{
+        width: 17rem;
+    }
+
+    .banner .div2 .find{
+        width: 17rem;
+    }
+
+
+
+
+
+
+
+
 }
