@@ -9,7 +9,7 @@ body {
     font-family: 'Mulish', sans-serif;
     background: #FFF;
 }
-
+   /* Common part start */
 .container {
     max-width: 74rem;
     width: 80%;
@@ -51,9 +51,9 @@ body {
 .common-btn:visited {
     color: darkgray;
 }
+    /* Common part end */
 
-/* nav-bar */
-
+    /* nav-bar  start*/
 header {
     margin-top: 35px;
 }
@@ -90,8 +90,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-
 }
 
 .page-title h3 {
@@ -103,10 +101,9 @@ nav {
 nav span {
     color: #FF5400;
 }
+/* nav-bar  end*/
 
-
-/* banner section */
-
+/* banner section start */
 .banner {
     background-image: url('/Images/Group\ 13\ \(1\)\ \(1\).png');
     height: 31.25rem;
@@ -117,20 +114,12 @@ nav span {
     margin-top: 3.2rem;
 }
 
-/* .banner .div1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-} */
-
 .banner .banner-tittle {
     color: #FFF;
     font-size: 4rem;
     font-weight: 800;
     display: flex;
     justify-content: center;
-
-
 }
 
 .banner-discription {
@@ -176,10 +165,9 @@ nav span {
 .banner .div2 .find img {
     width: 1.5rem;
 }
+/* banner section end */
 
-
-/* section-01 */
-
+/* section-01 start*/
 .section1 {
     display: flex;
     justify-content: space-between;
@@ -200,11 +188,10 @@ ul {
 .section1 .content li span {
     font-weight: 700;
 }
+/* section-01 end*/
 
 
-
-/*  section-02 */
-
+/*  section-02 start*/
 .section2 {
     margin-top: 6.3rem;
 }
@@ -217,17 +204,29 @@ ul {
     padding: 0 16.5rem;
 }
 
-.section2 .section2-picture {
-    display: grid;
-    /* grid-template-rows: 18.75rem 17.75rem 18.75rem; */
-    /* gap: 1.5rem; */
+.section2 .section2-picture{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 3.2rem;
 }
 
+.section2 .section2-picture .div1{
+    display: flex;
+    gap: 1.5rem;
+}
+.section2 .section2-picture .div2{
+    display: flex;
+    gap: 1.5rem;
+}
+.section2 .section2-picture .div3{
+    display: flex;
+    gap: 1.5rem;
+}
+/*  section-02 end*/
 
 
-
-/* section-03 */
-
+/* section-03 start*/
 .section3 .content {
     text-align: center;
     padding: 0 16rem;
@@ -280,8 +279,9 @@ ul {
     border: 1px solid rgba(233, 68, 68, 0.20);
     background: rgba(233, 68, 68, 0.05);
 }
+/* section-03 end*/
 
-/* section-06 */
+/* section-06 start*/
 .section6 {
     display: flex;
     justify-content: space-between;
@@ -379,13 +379,10 @@ ul {
 .section6 .div2 .discount-banner p {
     margin-top: 0.6rem;
 }
+   /* section-06 end */
 
 
-
-
-
-/* Footer section */
-
+   /* Footer section start */
 footer{
     background: rgba(19, 19, 24, 0.05);
     height: 31rem;
@@ -412,8 +409,7 @@ footer .footer-title{
 .footer-title h3 {
     color: #131318;
     font-size: 2rem;
-    font-weight: 800;
-    
+    font-weight: 800;   
 }
 
 .footer-title span {
@@ -435,29 +431,20 @@ footer>.footer-container .icons img{
 }
 
 footer>.footer-container hr {
-
     height: 1.1px;
     width: 85%;
     background:rgba(19, 19, 24, 0.10);;
     margin: 0 auto;
     border: none;
-
-   
 }
+   /* Footer section end */
 
 
 
 
-
-
-
-
+   /* Styles for mobile devices max-600px start*/
 
 @media screen and (max-width: 600px) {
-
-    .hide {
-        display: none;
-    }
 
     /* common */
     .text {
@@ -478,7 +465,6 @@ footer>.footer-container hr {
     }
 
     /* banner section */
-
     .banner {
         background-position: center center;
     }
@@ -508,19 +494,37 @@ footer>.footer-container hr {
     }
 
     /* Section-01 */
-
     .section1 {
         flex-direction: column;
         gap: 2.5rem;
     }
 
     /* section-02 */
+    .section2-content p{
+        padding: 1rem 1.5rem;
+    }
 
-
+    .section2 .section2-picture{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 3.2rem;
+    }
+    .section2 .section2-picture img{
+        height: 15.6rem;
+    }
+    .section2 .section2-picture .div1{
+        flex-direction: column;
+    }
+    .section2 .section2-picture .div2{
+        flex-direction: column;
+    }
+    .section2 .section2-picture .div3{
+        flex-direction: column;
+    }
 
 
     /* section-03 */
-
     .section3 .content {
         padding: 0 2rem;
     }
@@ -542,7 +546,6 @@ footer>.footer-container hr {
     }
 
     /*  section-06 */
-
     .section6 {
         flex-direction: column;
     }
@@ -550,8 +553,6 @@ footer>.footer-container hr {
     .section6 .div1 {
         width: 24rem;
     }
-
-
 
     .section6 .div2 {
         max-width: 30rem;
@@ -571,7 +572,5 @@ footer>.footer-container hr {
         right: 0.8rem;
     }
 
-
-
-
 }
+    /* Styles for mobile devices max-600px  end */
