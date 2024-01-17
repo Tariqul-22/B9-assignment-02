@@ -7,6 +7,7 @@
 
 body {
     font-family: 'Mulish', sans-serif;
+    background: #FFF;
 }
 
 .container {
@@ -232,7 +233,7 @@ ul {
     padding: 0 16rem;
 }
 
-.section3 .info{
+.section3 .info {
     margin-top: 3rem;
     display: flex;
     flex-direction: column;
@@ -240,7 +241,7 @@ ul {
     gap: 1.5rem;
 }
 
-.section3 .info .div1{
+.section3 .info .div1 {
     display: flex;
     justify-content: space-between;
     gap: 1.5rem;
@@ -248,12 +249,13 @@ ul {
 
 .section3 .info h3 {
     color: #131318;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 800;
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
-.section3 .info p{
+
+.section3 .info p {
     margin: 0;
 }
 
@@ -279,6 +281,104 @@ ul {
     background: rgba(233, 68, 68, 0.05);
 }
 
+/* section-06 */
+.section6 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.8rem;
+    margin-top: 7rem;
+}
+
+.section6 .div1 {
+    width: 29rem;
+    height: 21.8rem;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: 1.2px solid #FF5400;
+    padding: 2.5rem;
+}
+
+.section6 .div1 h3 {
+    color: #131318;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.section6 .div2 {
+    position: relative;
+}
+
+.section6 .div1 p {
+    padding-right: 5.25rem;
+    margin: 0.8rem auto;
+}
+
+.section6 .div1 form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.section6 .div1 form input {
+    height: 3.2rem;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    border: 0;
+    padding-left: 20px;
+}
+
+.section6 .div1 form input[type=submit] {
+    background-color: #FF5400;
+    color: #FFF;
+    font-family: Mulish;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 800;
+    border: 0;
+}
+.section6 .div1 form input:hover[type=submit] {
+    background-color: blueviolet;
+    color: aqua;
+}
+.section6 .div1 hr {
+
+    height: 1px;
+    background: rgba(19, 19, 24, 0.10);
+    margin: 1.5rem auto;
+    border: none;
+}
+
+.section6 .div2 .discount-banner {
+    width: 324px;
+    height: 120px;
+    border-radius: 16px;
+    background: #FF5400;
+    text-align: center;
+    font-weight: 800;
+    font-size: 32px;
+    color: #FFF;
+    padding-top: 0.5rem;
+    position: absolute;
+    bottom: 3.5rem;
+    right: 0.9rem;
+    transform: rotate(-19.628deg);
+}
+
+.section6 .div2 .discount-banner a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.section6 .div2 .discount-banner a:hover {
+    color: darkblue;
+}
+
+.section6 .div2 .discount-banner p {
+    margin-top: 0.6rem;
+}
 
 
 
@@ -357,23 +457,57 @@ ul {
 
 
 
-     /* section-03 */
+    /* section-03 */
 
-     .section3 .content {
+    .section3 .content {
         padding: 0 2rem;
     }
 
-    .section3 .info .div1{
+    .section3 .info .div1 {
         flex-direction: column;
         align-items: center;
     }
+
     .section3 .info .card {
         max-width: 24rem;
         width: 90%;
         border-radius: 16px;
         margin: 0 auto;
     }
-    
+
+    .section3 .info h3 {
+        font-size: 1.25rem;
+    }
+
+    /*  section-06 */
+
+    .section6 {
+        flex-direction: column;
+    }
+
+    .section6 .div1 {
+        width: 24rem;
+    }
+
+
+
+    .section6 .div2 {
+        max-width: 30rem;
+    }
+    .section6 .div2 img{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .section6 .div2 .discount-banner {
+        width: 17rem;
+        height: 5rem;
+        font-weight: 700;
+        font-size: 1.5rem;
+        padding-top: 0.5rem;
+        bottom: 3rem;
+        right: 0.8rem;
+    }
 
 
 
