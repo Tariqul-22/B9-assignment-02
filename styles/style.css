@@ -13,7 +13,7 @@ body {
     max-width: 74rem;
     width: 80%;
     border-radius: 20px;
-    margin: 3.2rem auto;
+    margin: 6.4rem auto;
 }
 
 .text {
@@ -42,18 +42,25 @@ body {
     border: 0;
 }
 
-.common-btn:hover{
+.common-btn:hover {
     background-color: blueviolet;
-    color:aqua;
+    color: aqua;
 }
-.common-btn:visited{
-    color:darkgray;
+
+.common-btn:visited {
+    color: darkgray;
 }
 
 /* nav-bar */
 
 header {
     margin-top: 35px;
+}
+
+nav {
+    max-width: 74rem;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .page-title {
@@ -106,6 +113,7 @@ nav span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 3.2rem;
 }
 
 /* .banner .div1 {
@@ -169,7 +177,7 @@ nav span {
 }
 
 
-        /* section-01 */
+/* section-01 */
 
 .section1 {
     display: flex;
@@ -188,8 +196,88 @@ ul {
     margin: 1rem auto;
 }
 
+.section1 .content li span {
+    font-weight: 700;
+}
 
 
+
+/*  section-02 */
+
+.section2 {
+    margin-top: 6.3rem;
+}
+
+.section2-content {
+    text-align: center;
+}
+
+.section2-content p {
+    padding: 0 16.5rem;
+}
+
+.section2 .section2-picture {
+    display: grid;
+    /* grid-template-rows: 18.75rem 17.75rem 18.75rem; */
+    /* gap: 1.5rem; */
+}
+
+
+
+
+/* section-03 */
+
+.section3 .content {
+    text-align: center;
+    padding: 0 16rem;
+}
+
+.section3 .info{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.section3 .info .div1{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.section3 .info h3 {
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.section3 .info p{
+    margin: 0;
+}
+
+.section3 .info .card {
+    width: 35.8em;
+    height: 17.8em;
+    border-radius: 1rem;
+    padding: 2rem 3.5rem 2rem 2rem;
+}
+
+.section3 .info .card-1 {
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+
+.section3 .info .card-2 {
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+
+.section3 .info .card-3 {
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+}
 
 
 
@@ -204,6 +292,10 @@ ul {
 
 
 @media screen and (max-width: 600px) {
+
+    .hide {
+        display: none;
+    }
 
     /* common */
     .text {
@@ -253,16 +345,35 @@ ul {
         width: 17rem;
     }
 
-          /* Section-01 */
+    /* Section-01 */
 
-    .section1{
+    .section1 {
         flex-direction: column;
         gap: 2.5rem;
     }
 
+    /* section-02 */
 
 
 
+
+     /* section-03 */
+
+     .section3 .content {
+        padding: 0 2rem;
+    }
+
+    .section3 .info .div1{
+        flex-direction: column;
+        align-items: center;
+    }
+    .section3 .info .card {
+        max-width: 24rem;
+        width: 90%;
+        border-radius: 16px;
+        margin: 0 auto;
+    }
+    
 
 
 
